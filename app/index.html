@@ -1,0 +1,63 @@
+<!doctype html>
+<html ng-app="MainApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>nickandbenlearnvagrant by gulp-angular-semantic-ui</title>
+
+    <!-- build:css styles/style.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/semantic/dist/semantic.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    
+    <div ng-controller="MenuCtrl" class="ui fixed inverted main menu">
+        <div class="container">
+            <div class="title item">nickandbenlearnvagrant</div>
+            <div class="right menu">
+                <div class="ui simple dropdown item">
+                    <i class="browser icon"></i> Demo
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" ng-href="#/login">
+                            <i class="user icon"></i> Login
+                        </a>
+                        <a class="item" ng-href="#/pagination">
+                            <i class="table icon"></i> Pagination
+                        </a>
+                        <a class="item" ng-href="#/tabs">
+                            <i class="ellipsis horizontal icon"></i> Tab
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view></div>
+
+    
+    <!-- build:js script.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/angularjs/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <script src="scripts/controllers/MenuCtrl.js"></script>
+    <script src="scripts/controllers/AuthCtrl.js"></script>
+    <script src="scripts/controllers/PaginationCtrl.js"></script>
+    <script src="scripts/controllers/TabularCtrl.js"></script>
+    <script src="scripts/services/PaginationService.js"></script>
+    <script src="scripts/services/TabularService.js"></script>
+    <script src="scripts/directives/pagination.js"></script>
+    <script src="scripts/directives/tabItem.js"></script>
+    <script src="scripts/directives/showIf.js"></script>
+    <script src="scripts/route.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
